@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-  crossorigin="anonymous" 
-  referrerpolicy="no-referrer" 
-  />
-  <title>E-commerce || Hashtag</title>
-</head>
-<body>
-  <section 
-  id ="carrinho" 
-  class="fixed top-0 right-[0px] bg-indigo-950 h-screen w-[360px] text-slate-200">
-    <div id="cabecalho-carrinho" class="flex justify-between m-4">
-      <p>Meu carrinho</p>
-      <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
-    </div>
-    <section id="produtos-carrinho">
-      <p>Camisa Larga com Bolsos</p>
-      <p>Casaco Reto com Lã</p>
-      <p>Jaqueta com Efeito Camurça</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-stone-200 flex flex-col">
+    <section
+      id="carrinho"
+      class="fixed top-0 right-[-360px] bg-slate-950 h-screen w-[360px] text-slate-200 z-50"
+    >
+      <div id="cabecalho-carrinho" class="flex justify-between m-4">
+        <p>Meu carrinho</p>
+        <button id="fechar-carrinho">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+      <section id="produtos-carrinho">
+        <p>Camisa Larga com Bolsos</p>
+        <p>Casaci Reto com Lã</p>
+        <p>Jaqueta com Efeito Camurça</p>
+      </section>
+      <p id="preco-total">$200</p>
+      <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
     </section>
-    <p id="preco-total">$200</p>
-    <button class="bg-slate-200 text-slate-900 p-1">Finalizar Compra</button>
-  </section>
-  <header class="flex bg-indigo-950 h-16 p-3 justify-between">
-    <img src="./assets/logo/hashtag.svg" alt="Logo do Magazine hashtag">
-    <div class="text-slate-200 flex gap-4 items-end">
-      <button id="abrir-carrinho">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </button>
-      <button>
-        <i class="fa-solid fa-user" style="color: #ffffff;"></i></button>
-    </div>
-  </header>
-  <main>
-    <section id="container-produto" class="flex flex-wrap"></section>
-  </main>
-  <script type="module" src="./main.js"></script>
-</body>
+    <header
+      class="flex bg-slate-950 shadow-xl shadow-slate-400 px-8 py-4 justify-between sticky top-0"
+    >
+      <img
+        class="h-16"
+        src="./assets/logo/hashtag.svg"
+        alt="Logo do Magazine Hashtag."
+      />
+      <div class="text-slate-200 flex gap-2 items-end mx-2">
+        <button id="abrir-carrinho" class="mx-2">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        <button class="mr-2"><i class="fa-solid fa-user"></i></button>
+      </div>
+    </header>
+    <main>
+      <section
+        id="container-produto"
+        class="flex flex-wrap p-10 justify-center gap-10"
+      ></section>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
