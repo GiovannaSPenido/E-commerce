@@ -1,4 +1,4 @@
-import { inicializarCarrinho } from "./menuCarrinho";
+import { inicializarCarrinho } from "./src/menuCarrinho";
 
 const catalogo = [{ 
         id: 1,
